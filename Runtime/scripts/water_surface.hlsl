@@ -82,7 +82,7 @@ float4 traceWater(float3 rayDirection)
 }
 
 //CUSTOM NODE FUNCTIONS
-void computeWater_float(float condition, float3x3 cameraMatrix, float2 fragmentCoordinates, out float4 hitPosition, out float3 normal, out float hitIndex, out float3 rayDirection)
+void computeWater_float(int condition, float3x3 cameraMatrix, float2 fragmentCoordinates, out float4 hitPosition, out float3 normal, out int hitIndex, out float3 rayDirection)
 {
     if (condition == 0)
     {
@@ -127,22 +127,22 @@ void computeWater_float(float condition, float3x3 cameraMatrix, float2 fragmentC
     hitIndex = MAX_OBJECTS;
 }
 
-void sampleHeightField_float(float3 position, out float3 heightPosition)
+void sampleHeightField_float(float3 seedPosition, out float3 heightPosition)
 {
-    float y = position.y;
+    float y = 0;
     
     //binary search or Newton-Raphson style iteration
     float stepSize = 0.05; 
 
     for (int i = 0; i < 100; i++)
     {
-        position.y = y;
-        float height = computeWave(position);
+        seedPosition.y = y;
+        float height = computeWave(seedPosition);
         if (height < 0.01)
             break;
         y -= stepSize;
     }
-    heightPosition = float3(position.x, y, position.z);
+    heightPosition = float3(seedPosition.x, y, seedPosition.z);
 }
 
 void adaptableNormal_float(float3 position, float3 offset, float influence, float sampleRadius, out float3 normal)
