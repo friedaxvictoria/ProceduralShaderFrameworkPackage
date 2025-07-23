@@ -1,19 +1,29 @@
 {
     "name": "com.tudresden.proceduralshaderframeworkpackage",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "displayName": "Procedural Shader Framework Package",
     "description": "This is the Procedural Shader Framework Package for Unity",
     "unity": "2022.3",
     "samples": [
     {
         "displayName": "Christmas Tree",
-        "description": "Demonstrates a simple sample shader containing a bouncing christmas tree",
+        "description": "Demonstrates a simple sample shader containing a bouncing christmas tree. It is done using visual scripting.",
         "path": "Samples~/Christmas Tree"
     },
     {
         "displayName": "Safety Buoy",
-        "description": "Demonstrates a simple sample shader containing a safety buoy floating on the ocean",
+        "description": "Demonstrates a simple sample shader containing a safety buoy floating on the ocean. It is done using visual scripting.",
         "path": "Samples~/Safety Buoy"
+    },
+    {
+        "displayName": "Car",
+        "description": "Demonstrates a simple sample shader containing a car going backwards and forwards. Both visual and standard scripting versions were implemented.",
+        "path": "Samples~/Car"
+    },
+    {
+        "displayName": "Elevator",
+        "description": "Demonstrates a simple sample shader containing an elevator and a snowman. It is done using standard scripting.",
+        "path": "Samples~/Elevator"
     }
     ]
 }
