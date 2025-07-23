@@ -1,6 +1,6 @@
 {
     "name": "com.tudresden.proceduralshaderframeworkpackage",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "displayName": "Procedural Shader Framework Package",
     "description": "This is the Procedural Shader Framework Package for Unity",
     "unity": "2022.3",
