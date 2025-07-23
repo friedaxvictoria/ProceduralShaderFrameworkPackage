@@ -17,13 +17,12 @@ Shader "Custom/Car"
             #pragma fragment frag
             
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-
-            #include "Assets/proceduralshaderframeworkpackage/runtime/scripts/sdf_functions.hlsl"
-            #include "Assets/proceduralshaderframeworkpackage/runtime/scripts/basics_functions.hlsl"
-            #include "Assets/proceduralshaderframeworkpackage/runtime/scripts/lighting_functions.hlsl"
-            #include "Assets/proceduralshaderframeworkpackage/runtime/scripts/animation_functions.hlsl"
-            #include "Assets/proceduralshaderframeworkpackage/runtime/scripts/water_surface.hlsl"
-            #include "Assets/proceduralshaderframeworkpackage/runtime/scripts/tween_functions.hlsl"
+            #include "Packages/com.tudresden.proceduralshaderframeworkpackage/Runtime/scripts/sdf_functions.hlsl"
+            #include "Packages/com.tudresden.proceduralshaderframeworkpackage/Runtime/scripts/basics_functions.hlsl"
+            #include "Packages/com.tudresden.proceduralshaderframeworkpackage/Runtime/scripts/lighting_functions.hlsl"
+            #include "Packages/com.tudresden.proceduralshaderframeworkpackage/Runtime/scripts/animation_functions.hlsl"
+            #include "Packages/com.tudresden.proceduralshaderframeworkpackage/Runtime/scripts/water_surface.hlsl"
+            #include "Packages/com.tudresden.proceduralshaderframeworkpackage/Runtime/scripts/tween_functions.hlsl"
 
             struct Attributes
             {
