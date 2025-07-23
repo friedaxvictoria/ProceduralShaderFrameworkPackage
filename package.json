@@ -1,6 +1,6 @@
 {
     "name": "com.tudresden.proceduralshaderframeworkpackage",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "displayName": "Procedural Shader Framework Package",
     "description": "This is the Procedural Shader Framework Package for Unity",
     "unity": "2022.3",
@@ -24,6 +24,12 @@
         "displayName": "Elevator",
         "description": "Demonstrates a simple sample shader containing an elevator and a snowman. It is done using standard scripting.",
         "path": "Samples~/Elevator"
+    }
+    ,
+    {
+        "displayName": "Shrine",
+        "description": "Demonstrates a simple sample shader containing a shrine in the ocean. It is done using standard scripting.",
+        "path": "Samples~/Shrine"
     }
     ]
 }

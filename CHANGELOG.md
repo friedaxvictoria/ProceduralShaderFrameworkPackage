@@ -1,3 +1,6 @@
+## [2.2.0] - 23 July 2025
+ - Sample scenes: Shrine
+
 ## [2.1.0] - 23 July 2025
  - Lambertian Lighting changes
  - Sample scenes: Car and Elevator
